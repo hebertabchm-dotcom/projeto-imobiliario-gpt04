@@ -3,124 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siwood - Boutique de Interiores Premium</title>
+    <title>Siwood | Boutique de Interiores Premium</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="styles.css">
-    <!-- Fontes sugeridas: Montserrat ou Inter para um visual moderno -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav">
-                <div class="logo">SIWOOD</div>
-                <ul class="nav-links">
-                    <li><a href="#">Telegram</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#" class="contact-btn">+7 (912) 545-00-17</a></li>
+            <nav class="nav" aria-label="Principal">
+                <a class="logo" href="#top">SIWOOD</a>
+                <ul class="nav-links" id="primary-nav">
+                    <li><a href="#top">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#contato" class="contact-btn">Fale conosco</a></li>
                 </ul>
-                <div class="menu-toggle">
+                <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-nav">
                     <span></span>
                     <span></span>
-                </div>
+                    <span></span>
+                </button>
             </nav>
         </div>
+        <div class="nav-backdrop" aria-hidden="true"></div>
     </header>
 
-    <main>
+    <main id="top">
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-bg">
-                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80" alt="Interior Luxuoso">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80" alt="Interior sofisticado">
             </div>
             <div class="hero-content">
-                <h1 class="reveal-text">PREMIALNYY<br>INTERYERNYY BUTIK</h1>
-                <p class="fade-in">Multiformatnaya kompaniya zanimayushchayasya interyernoy upakovkoy ob'yektov nedvizhimosti pod klyuch</p>
-                <div class="hero-actions">
-                    <a href="#" class="btn-primary">KATALOG</a>
-                    <div class="scroll-indicator">
+                <span class="eyebrow reveal delay-1">Boutique de interiores premium</span>
+                <h1 class="reveal delay-2">Design, reforma e curadoria completa<br>para espaços que contam histórias.</h1>
+                <p class="reveal delay-3">A Siwood conduz projetos residenciais e corporativos com equipe própria e parceiros selecionados, garantindo prazos, custos e acabamento impecável.</p>
+                <div class="hero-actions reveal delay-4">
+                    <a href="#servicos" class="btn-primary">Ver serviços</a>
+                    <a href="#contato" class="btn-secondary">Solicitar orçamento</a>
+                    <a href="#servicos" class="scroll-indicator" aria-label="Ver serviços">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                            <path d="M7 13l5 5 5-5M7 6l5 5 5-5"></path>
                         </svg>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- Solutions Section -->
-        <section class="solutions">
+        <section class="solutions" id="servicos">
             <div class="container">
-                <h2 class="section-title">NASHI RESHENIYA DLYA<br>VASHEGO PROSTRANSTVA</h2>
+                <div class="section-header reveal">
+                    <h2 class="section-title">Nossas soluções para seu espaço</h2>
+                    <p class="section-subtitle">Projetos assinados com execução ponta a ponta, do estudo ao pós-obra.</p>
+                </div>
                 <div class="solutions-grid">
-                    <div class="solution-card">
+                    <article class="solution-card reveal">
                         <div class="card-img">
-                            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Design">
+                            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Projeto de interiores">
                         </div>
                         <div class="card-info">
                             <span class="card-num">01</span>
-                            <h3>Razrabotka dizayn proyektov</h3>
-                            <p>Uslugi vklyuchayut postavku i montazh mebeli, tekstilya, otdelochnykh materialov...</p>
-                            <a href="#" class="btn-link">PODROBNEE</a>
+                            <h3>Projeto de interiores</h3>
+                            <p>Layout, materiais e especificações completas para executar com confiança.</p>
+                            <a href="#contato" class="btn-link">Saiba mais</a>
                         </div>
-                    </div>
-                    <div class="solution-card">
+                    </article>
+                    <article class="solution-card reveal">
                         <div class="card-img">
-                            <img src="https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?auto=format&fit=crop&w=800&q=80" alt="Remont">
+                            <img src="https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?auto=format&fit=crop&w=800&q=80" alt="Reforma completa">
                         </div>
                         <div class="card-info">
                             <span class="card-num">02</span>
-                            <h3>Remont ob'yektov POD KLYUCH</h3>
+                            <h3>Reforma completa</h3>
+                            <p>Gestão de obra, cronograma e execução cuidadosa com equipe especializada.</p>
+                            <a href="#contato" class="btn-link">Saiba mais</a>
                         </div>
-                    </div>
-                    <div class="solution-card">
+                    </article>
+                    <article class="solution-card reveal">
                         <div class="card-img">
-                            <img src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?auto=format&fit=crop&w=800&q=80" alt="Komplektatsiya">
+                            <img src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?auto=format&fit=crop&w=800&q=80" alt="Curadoria e mobiliário">
                         </div>
                         <div class="card-info">
                             <span class="card-num">03</span>
-                            <h3>Polnaya komplektatsiya ob'yektov</h3>
+                            <h3>Curadoria e mobiliário</h3>
+                            <p>Seleção de peças, marcenaria e decoração para finalizar com identidade.</p>
+                            <a href="#contato" class="btn-link">Saiba mais</a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Stats Section -->
-        <section class="stats">
+        <section class="stats" id="diferenciais">
             <div class="container">
                 <div class="stats-header">
-                    <p class="stats-desc">Multiformatnaya kompaniya zanimayushchayasya polnym tsiklom remonta, proizvodstvom, prodazhey mebeli i interyernoy upakovkoy ob'yektov nedvizhimosti pod klyuch</p>
+                    <div class="stats-intro reveal">
+                        <span class="eyebrow">Diferenciais</span>
+                        <h2 class="section-title">Excelência em cada etapa do projeto</h2>
+                        <p class="stats-desc">Equipe multidisciplinar, curadoria de fornecedores e gestão transparente para entregar qualidade premium sem surpresas.</p>
+                    </div>
                     <div class="stats-grid">
-                        <div class="stat-item">
+                        <div class="stat-item reveal">
                             <span class="stat-val">200+</span>
-                            <span class="stat-label">Uspeshnykh proyektov</span>
+                            <span class="stat-label">Projetos entregues</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-val">100+</span>
-                            <span class="stat-label">Raznoprofil'nykh dizaynerov v komande</span>
+                        <div class="stat-item reveal">
+                            <span class="stat-val">80+</span>
+                            <span class="stat-label">Profissionais especialistas</span>
                         </div>
-                        <div class="stat-item">
+                        <div class="stat-item reveal">
                             <span class="stat-val">150+</span>
-                            <span class="stat-label">Partnerov</span>
+                            <span class="stat-label">Parceiros homologados</span>
                         </div>
                     </div>
                 </div>
                 <div class="stats-main">
-                    <div class="stats-image">
-                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80" alt="Poltrona Design">
+                    <div class="stats-image reveal">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80" alt="Poltrona de design">
                     </div>
                     <div class="stats-sub-grid">
-                        <div class="stat-item">
+                        <div class="stat-item reveal">
                             <span class="stat-val">30+</span>
-                            <span class="stat-label">Dilerskikh soglasheniy s vedushchimi brendami</span>
+                            <span class="stat-label">Marcas premium no portfólio</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-val">01+</span>
-                            <span class="stat-label">Shourum v tsentre stolitsy</span>
+                        <div class="stat-item reveal">
+                            <span class="stat-val">01</span>
+                            <span class="stat-label">Showroom no centro da cidade</span>
                         </div>
-                        <div class="stat-item">
+                        <div class="stat-item reveal">
                             <span class="stat-val">50+</span>
-                            <span class="stat-label">Stroitel'nykh brigad</span>
+                            <span class="stat-label">Equipes de execução</span>
                         </div>
                     </div>
                 </div>
@@ -128,11 +145,16 @@
         </section>
 
         <!-- Footer CTA Section -->
-        <section class="footer-cta">
+        <section class="footer-cta" id="contato">
             <div class="container">
                 <div class="cta-content">
-                    <h2 class="reveal-text">SOZDAYEM NE PROSTO PREDMETY, A ATMOSFERU VASHEGO DOMA</h2>
-                    <p class="fade-in">My zanimayemsya proektirovaniem zhilykh i obshchestvennykh interyerov s 2013 goda. Nam odinakovo nravitsya rabotat' kak s istoricheskimi ob'yektami, tak i s sovremennymi zhilymi domami.</p>
+                    <span class="eyebrow reveal delay-1">Atendimento personalizado</span>
+                    <h2 class="reveal delay-2">Criamos não apenas ambientes, mas a atmosfera do seu dia a dia.</h2>
+                    <p class="reveal delay-3">Desde 2013, desenvolvemos interiores residenciais e corporativos combinando curadoria de marcas, execução eficiente e acompanhamento próximo.</p>
+                    <div class="cta-actions reveal delay-4">
+                        <a href="mailto:contato@siwood.com" class="btn-primary">Agendar conversa</a>
+                        <a href="#servicos" class="btn-secondary">Ver serviços</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -148,8 +170,8 @@
                         <a href="#" aria-label="Instagram">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                         </a>
-                        <a href="#" aria-label="Telegram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"></path><path d="M22 2L15 22L11 13L2 9L22 2Z"></path></svg>
+                        <a href="#" aria-label="WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-1.9 5.4L21 21l-4.1-1.6a8.38 8.38 0 0 1-5.4 1.9 8.5 8.5 0 1 1 8.5-8.5Z"></path></svg>
                         </a>
                         <a href="#" aria-label="LinkedIn">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
@@ -160,20 +182,20 @@
                 <div class="footer-links">
                     <h4>Navegação</h4>
                     <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#top">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-links">
                     <h4>Serviços</h4>
                     <ul>
-                        <li><a href="#">Design Residencial</a></li>
-                        <li><a href="#">Espaços Comerciais</a></li>
-                        <li><a href="#">Consultoria Online</a></li>
-                        <li><a href="#">Reforma Completa</a></li>
+                        <li><a href="#servicos">Design residencial</a></li>
+                        <li><a href="#servicos">Espaços corporativos</a></li>
+                        <li><a href="#servicos">Consultoria online</a></li>
+                        <li><a href="#servicos">Reforma completa</a></li>
                     </ul>
                 </div>
 
@@ -181,8 +203,9 @@
                     <h4>Newsletter</h4>
                     <p>Receba inspirações e novidades exclusivas.</p>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Seu e-mail" required>
-                        <button type="submit">
+                        <label class="sr-only" for="newsletter-email">Seu e-mail</label>
+                        <input id="newsletter-email" name="email" type="email" placeholder="Seu e-mail" required>
+                        <button type="submit" aria-label="Enviar">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                         </button>
                     </form>
@@ -199,7 +222,7 @@
         </div>
     </footer>
 
-    <div class="floating-explore">
+    <a class="floating-explore" href="#servicos" aria-label="Explorar serviços">
         <span>Explorar</span>
         <div class="explore-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -207,7 +230,7 @@
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
         </div>
-    </div>
+    </a>
 
     <script src="script.js"></script>
 </body>
