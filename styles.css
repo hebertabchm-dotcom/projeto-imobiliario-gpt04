@@ -263,6 +263,11 @@ body.nav-open {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600;
+    color: var(--accent-strong);
+}
+
+.hero .eyebrow,
+.footer-cta .eyebrow {
     color: rgba(255, 255, 255, 0.7);
 }
 
